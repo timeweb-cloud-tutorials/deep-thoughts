@@ -15,7 +15,7 @@ RUN npx prisma migrate deploy
 RUN npx prisma generate
 
 RUN npm run build
-RUN npm run prune
+RUN npm prune
 
 ENV PORT=3000
 
