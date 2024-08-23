@@ -17,7 +17,7 @@ defineProps<Props>();
       В базе нет мыслей...
     </h4>
 
-    <ul v-else class="flex flex-col gap-2">
+    <ul v-else class="flex flex-col gap-2" role="list">
       <li v-for="thought in thoughts" :key="thought.id">
         <ThoughtCard :thought="thought" />
       </li>
