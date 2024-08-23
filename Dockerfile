@@ -4,9 +4,6 @@ ARG NODE_VERSION=20
 
 FROM node:${NODE_VERSION}-alpine AS base
 
-ARG DATABASE_URL
-ENV DATABASE_URL ${DATABASE_URL}
-
 WORKDIR /app
 COPY package.json package-lock.json ./
 RUN npm install
@@ -14,6 +11,9 @@ RUN npm install
 FROM base AS builder
 
 COPY . .
+
+ARG DATABASE_URL
+ENV DATABASE_URL ${DATABASE_URL}
 
 RUN npx prisma migrate deploy
 RUN npx prisma generate
