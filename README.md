@@ -1,3 +1,7 @@
+- 🔗 **Оригинальный репозиторий**: [deep-thoughts](https://github.com/Serpentarius13/deep-thoughts)
+- ✍️ **Автор**: [Andrey Dolgorukiy](https://github.com/Serpentarius13)
+- 📖 **Репозиторий используется в статье**: [Как создать и развернуть приложение на Nuxt: быстрый и простой деплой с Apps](https://timeweb.cloud/tutorials/cloud/kak-razvernut-prilozhenie-na-nuxt)
+
 # Nuxt 3 Minimal Starter
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
